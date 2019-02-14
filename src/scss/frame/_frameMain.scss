@@ -1,10 +1,26 @@
 .frame-breadcrumb{
     background: $frame-breadcrumb-bgc;
+    @extend .clear;
     .el-breadcrumb{
         line-height: 56px;
         color: $frame-breadcrumb-fontc;
         padding: 0 20px;
+        float: left;
         a{color: inherit;}
+    }
+    .btn-toolbar{
+        float: right;
+        line-height: 56px;
+        margin-right: 20px;
+        .el-button{
+            color: $toolbar-fontc;
+            background-color: $toolbar-bgc;
+            border-color: $toolbar-borc;
+            &:hover{
+                background-color: $toolbar-bgc_hover;
+                border-color: $toolbar-borc_hover;
+            }
+        }
     }
 }
 .el-main{
