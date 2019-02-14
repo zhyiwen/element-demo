@@ -1,0 +1,18 @@
+.scroll{
+    &::-webkit-scrollbar{
+        width: 4px;
+        height: 4px;
+    }
+    &::-webkit-scrollbar-thumb{
+        border-radius: 5px;
+        -webkit-box-shadow:inset 0 0 5px rgba(0,0,0,0.2);
+        box-shadow:inset 0 0 5px rgba(0,0,0,0.2);
+        background: rgba(0,0,0,0.2);
+    }
+    &::-webkit-scrollbar-track{
+        -webkit-box-shadow:inset 0 0 5px rgba(0,0,0,0.2);
+        box-shadow:inset 0 0 5px rgba(0,0,0,0.2);
+        border-radius: 0;
+        background: rgba(0,0,0,0.1)
+    }
+}

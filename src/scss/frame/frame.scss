@@ -1,0 +1,13 @@
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome.scss';
+@import "theme";
+@import "variable";
+@import "_frameHead";
+@import "_frameNav";
+@import "_frameMain";
+.frame-cont{
+    height: 100%;
+}
+.frame-body{
+    height: calc(100% - 60px);
+}

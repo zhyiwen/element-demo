@@ -1,0 +1,16 @@
+.frame-breadcrumb{
+    background: $frame-breadcrumb-bgc;
+    .el-breadcrumb{
+        line-height: 56px;
+        color: $frame-breadcrumb-fontc;
+        padding: 0 20px;
+        a{color: inherit;}
+    }
+}
+.el-main{
+    background: $frame-main-bgc;
+    padding: 0;
+}
+.frame-content{
+    padding: 20px;
+}
