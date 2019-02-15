@@ -32,7 +32,7 @@
         </div>
       </el-header>
       <el-container class="frame-body">
-        <el-aside width="200px" class="frame-nav">
+        <el-aside width="230px" class="frame-nav">
           <el-menu default-active="1" class="el-menu-vertical-demo">
             <el-menu-item index="1">
               <i class="fa fa-fw fa-home"></i>
@@ -86,7 +86,9 @@
               <el-button type="default" icon="el-icon-setting" size="small"></el-button>
             </div>
           </div>
-          <div class="frame-content"></div>
+          <div class="frame-content">
+            <router-view/>
+          </div>
         </el-main>
       </el-container>
     </el-container>

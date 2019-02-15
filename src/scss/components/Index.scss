@@ -1,0 +1,44 @@
+@import "../import";
+.data-info{
+  background: #95a5a6;
+  color: #fff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  &.bg-green{background: #37bf8d;}
+  &.bg-blue{background: #5394c9;}
+  &.bg-midnightblue{background: #34495e;}
+  .data-hd{
+    @extend .clear;
+    height: 30px;
+    background: rgba(255,255,255,0.1);
+    line-height: 30px;
+    padding: 0 10px;
+    .hd-title{
+      float: left;
+    }
+    .hd-range{
+      float: right;
+      .fa{}
+    }
+  }
+  .data-bd{
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    padding: 10px;
+    overflow: hidden;
+    strong{
+      font-size: 20px;
+      font-family: initial;
+    }
+    .data-ico{
+      position: absolute;
+      right: 0px;
+      bottom: -15px;
+      color: #fff;
+      opacity: 0.2;
+      //transform:rotate(7deg);
+      .fa{font-size: 60px;}
+    }
+  }
+}

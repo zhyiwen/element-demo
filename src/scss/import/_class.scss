@@ -25,3 +25,19 @@
         clear: both;
     }
 }
+.zyw-panel{
+  color: #5f7676;
+  .el-card__header{
+    font-size: 14px;
+    color: #93a8a8;
+    background-color: #fafbfc;
+    border-bottom-color: #dadfe3;
+    font-weight: bold;
+  }
+  .panel-tools{
+    a{
+      cursor: pointer;
+      &:hover{color: #444;}
+    }
+  }
+}
