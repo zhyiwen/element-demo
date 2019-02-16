@@ -1,5 +1,5 @@
 <template>
-    <div class="zyw-index">
+    <div class="index">
       <el-row :gutter="20">
         <el-col :span="6">
           <div class="data-info">
