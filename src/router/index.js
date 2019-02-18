@@ -9,12 +9,12 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/1',
       name: 'index',
       component: Index
     },
     {
-      path: '/uibutton',
+      path: '/2-1',
       name: 'ui-button',
       component: UiButton
     }

@@ -33,7 +33,7 @@
       </el-header>
       <el-container class="frame-body">
         <el-aside width="230px" class="frame-nav">
-          <el-menu default-active="1" class="el-menu-vertical-demo">
+          <el-menu default-active="1" unique-opened router class="el-menu-vertical-demo">
             <el-menu-item index="1">
               <i class="fa fa-fw fa-home"></i>
               <span slot="title">主页</span>
