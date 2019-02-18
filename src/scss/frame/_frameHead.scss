@@ -1,59 +1,71 @@
-.frame-header{
-    background: $frame-head-bgc;
-    color: $frame-head-fontc;
-    line-height: 60px;
-    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.08), 0px 2px 0px 0px rgba(0, 0, 0, 0.02);
-    a{
+
+@mixin theme($theme-name, $frame-head-bgc, $frame-head-fontc, $frame-head-fontc_hover, $frame-head-logo-fontc, $frame-head-float-fontc, $head-user-bgc_hover, $head-user-fontc_hover, $head-tool-bgc, $head-tool-fontc) {
+  [head-theme='#{$theme-name}'] {
+    .frame-header{
+      background: $frame-head-bgc;
+      color: $frame-head-fontc;
+      line-height: 60px;
+      box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.08), 0px 2px 0px 0px rgba(0, 0, 0, 0.02);
+      a{
         cursor: pointer;
         &:hover{
-            color: $frame-head-fontc_hover;
+          color: $frame-head-fontc_hover;
         }
-    }
-    .head-logo{
-        color: #ececc6;
+      }
+      .head-logo{
+        color: $frame-head-logo-fontc;
+        font-size: 14px;
+      }
+      .head-float{
+        color: $frame-head-float-fontc;
         font-size: 14px;
         &.pull-left{
-            margin-right: 25px;
+          margin-right: 25px;
         }
         &.pull-right{
-            margin-left: 25px;
+          margin-left: 25px;
         }
-    }
-    .head-user{
+      }
+      .head-user{
         padding: 0 10px;
         cursor: pointer;
         span{}
         img{
-            width: 26px;
-            height: 26px;
-            vertical-align: middle;
-            border-radius: 50%;
-            margin-left: 10px;
+          width: 26px;
+          height: 26px;
+          vertical-align: middle;
+          border-radius: 50%;
+          margin-left: 10px;
         }
         &:hover, &:active{
-            background: rgba($head-user-bgc_hover, 0.2);
-            color: $head-user-fontc_hover;
+          background: rgba($head-user-bgc_hover, 0.2);
+          color: $head-user-fontc_hover;
         }
-    }
-    .head-tool-group{
+      }
+      .head-tool-group{
         margin-right: 30px;
         .head-tool{
-            display: inline-block;
-            margin: 0 5px;
-            border-radius: 4px;
-            width: 30px;
-            height: 30px;
-            line-height: 30px;
-            text-align: center;
-            background: rgba($head-tool-bgc, 0.2);
-            color: $head-tool-fontc;
-            &:hover{
-                background: rgba($head-tool-bgc, 0.4);
-                color: $frame-head-fontc_hover;
-            }
-            .fa{
-                font-size: 14px;
-            }
+          display: inline-block;
+          margin: 0 5px;
+          border-radius: 4px;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          background: rgba($head-tool-bgc, 0.2);
+          color: $head-tool-fontc;
+          &:hover{
+            background: rgba($head-tool-bgc, 0.4);
+            color: $frame-head-fontc_hover;
+          }
+          .fa{
+            font-size: 14px;
+          }
         }
+      }
     }
+  }
+}
+@each $theme-name, $frame-head-bgc, $frame-head-fontc, $frame-head-fontc_hover, $frame-head-logo-fontc, $frame-head-float-fontc, $head-user-bgc_hover, $head-user-fontc_hover, $head-tool-bgc, $head-tool-fontc in $head-theme {
+  @include theme($theme-name, $frame-head-bgc, $frame-head-fontc, $frame-head-fontc_hover, $frame-head-logo-fontc, $frame-head-float-fontc, $head-user-bgc_hover, $head-user-fontc_hover, $head-tool-bgc, $head-tool-fontc);
 }

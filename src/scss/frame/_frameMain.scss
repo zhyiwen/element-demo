@@ -30,3 +30,111 @@
 .frame-content{
     padding: 20px;
 }
+.theme-setting{
+  position: fixed;
+  top:136px;
+  right: -260px;
+  width: 260px;
+  background: #fff;
+  color: #5f7676;
+  border: 1px solid #dadfe3;
+  border-right: 0 !important;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.07);
+  padding: 0;
+  border-bottom-left-radius: 3px;
+  z-index: 1000;
+  transition: all 0.15s;
+  &.active{right: 0;}
+  .setting-icon{
+    display: inline-block;
+    position: absolute;
+    left: -43px;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #dadfe3;
+    border-right: 0 !important;
+    letter-spacing: normal;
+    text-transform: none;
+    background: #fafbfc;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    top: -1px;
+    cursor: pointer;
+    box-shadow: -1px 2px 1px rgba(0, 0, 0, 0.07);
+  }
+  .setting-head{
+    padding: 11px 0px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #93a8a8;
+    background: #fafbfc;
+    border-bottom: 1px solid #e6eaed;
+    font-weight: bold;
+  }
+  .set-choose-item{
+    padding: 15px 20px;
+    border-bottom: 1px solid #e6eaed;
+    &:last-child{border-bottom: none;}
+    h5{
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    .set-theme{
+      padding: 0;
+      text-align: left;
+      margin: 0;
+      li{
+        padding-left: 0;
+        padding-right: 0;
+        height: 20px;
+        width: 20px;
+        display: inline-block;
+        .set-theme-list{
+          height: 20px;
+          width: 20px;
+          display: inline-block;
+          border-radius: 50%;
+          border: 1px solid transparent;
+          cursor: pointer;
+          &.theme1{
+            background-color: #ecf0f1;
+            border-color: #e6ebed;
+          }
+          &.theme2{
+            background-color: #313e3e;
+            border-color: #2d3838;
+          }
+          &.theme3{
+            background-color: #34495e;
+            border-color: #304457;
+          }
+          &.theme4{
+            background-color: #3498db;
+            border-color: #2b94d9;
+          }
+          &.theme5{
+            background-color: #3bbfb4;
+            border-color: #39b7ad;
+          }
+          &.theme6{
+            background-color: #e36d4f;
+            border-color: #e26646;
+          }
+          &.theme7{
+            background-color: #7a869c;
+            border-color: #748198;
+          }
+          &.theme8{
+            background-color: #9b59b6;
+            border-color: #9752b3;
+          }
+          &.theme9{
+            background-color: #7863bc;
+            border-color: #725cb9;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,33 @@
+@import "theme";
+$head-theme: (
+    (theme1,$frame-head-bgc, $frame-head-fontc, $frame-head-fontc_hover, $frame-head-logo-fontc, $frame-head-float-fontc, $head-user-bgc_hover, $head-user-fontc_hover, $head-tool-bgc, $head-tool-fontc),
+    (theme2,$frame-head2-bgc, $frame-head2-fontc, $frame-head2-fontc_hover, $frame-head2-logo-fontc, $frame-head2-float-fontc, $head2-user-bgc_hover, $head2-user-fontc_hover, $head2-tool-bgc, $head2-tool-fontc),
+    (theme3,$frame-head3-bgc, $frame-head3-fontc, $frame-head3-fontc_hover, $frame-head3-logo-fontc, $frame-head3-float-fontc, $head3-user-bgc_hover, $head3-user-fontc_hover, $head3-tool-bgc, $head3-tool-fontc),
+    (theme4,$frame-head4-bgc, $frame-head4-fontc, $frame-head4-fontc_hover, $frame-head4-logo-fontc, $frame-head4-float-fontc, $head4-user-bgc_hover, $head4-user-fontc_hover, $head4-tool-bgc, $head4-tool-fontc),
+    (theme5,$frame-head5-bgc, $frame-head5-fontc, $frame-head5-fontc_hover, $frame-head5-logo-fontc, $frame-head5-float-fontc, $head5-user-bgc_hover, $head5-user-fontc_hover, $head5-tool-bgc, $head5-tool-fontc),
+    (theme6,$frame-head6-bgc, $frame-head6-fontc, $frame-head6-fontc_hover, $frame-head6-logo-fontc, $frame-head6-float-fontc, $head6-user-bgc_hover, $head6-user-fontc_hover, $head6-tool-bgc, $head6-tool-fontc),
+    (theme7,$frame-head7-bgc, $frame-head7-fontc, $frame-head7-fontc_hover, $frame-head7-logo-fontc, $frame-head7-float-fontc, $head7-user-bgc_hover, $head7-user-fontc_hover, $head7-tool-bgc, $head7-tool-fontc),
+    (theme8,$frame-head8-bgc, $frame-head8-fontc, $frame-head8-fontc_hover, $frame-head8-logo-fontc, $frame-head8-float-fontc, $head8-user-bgc_hover, $head8-user-fontc_hover, $head8-tool-bgc, $head8-tool-fontc),
+    (theme9,$frame-head9-bgc, $frame-head9-fontc, $frame-head9-fontc_hover, $frame-head9-logo-fontc, $frame-head9-float-fontc, $head9-user-bgc_hover, $head9-user-fontc_hover, $head9-tool-bgc, $head9-tool-fontc)
+);
+
+$nav-theme: (
+    (theme1,$frame-nav-bgc, $frame-nav-borc, $menu-bgc, $menu-fontc, $menu-item-bgc_active, $menu-item-bgc_hover, $menu-item-fontc_active),
+    (theme2,$frame-nav2-bgc, $frame-nav2-borc, $menu2-bgc, $menu2-fontc, $menu2-item-bgc_active, $menu2-item-bgc_hover, $menu2-item-fontc_active),
+    (theme3,$frame-nav3-bgc, $frame-nav3-borc, $menu3-bgc, $menu3-fontc, $menu3-item-bgc_active, $menu3-item-bgc_hover, $menu3-item-fontc_active),
+    (theme4,$frame-nav4-bgc, $frame-nav4-borc, $menu4-bgc, $menu4-fontc, $menu4-item-bgc_active, $menu4-item-bgc_hover, $menu4-item-fontc_active),
+    (theme5,$frame-nav5-bgc, $frame-nav5-borc, $menu5-bgc, $menu5-fontc, $menu5-item-bgc_active, $menu5-item-bgc_hover, $menu5-item-fontc_active),
+    (theme6,$frame-nav6-bgc, $frame-nav6-borc, $menu6-bgc, $menu6-fontc, $menu6-item-bgc_active, $menu6-item-bgc_hover, $menu6-item-fontc_active),
+    (theme7,$frame-nav7-bgc, $frame-nav7-borc, $menu7-bgc, $menu7-fontc, $menu7-item-bgc_active, $menu7-item-bgc_hover, $menu7-item-fontc_active),
+    (theme8,$frame-nav8-bgc, $frame-nav8-borc, $menu8-bgc, $menu8-fontc, $menu8-item-bgc_active, $menu8-item-bgc_hover, $menu8-item-fontc_active),
+    (theme9,$frame-nav9-bgc, $frame-nav9-borc, $menu9-bgc, $menu9-fontc, $menu9-item-bgc_active, $menu9-item-bgc_hover, $menu9-item-fontc_active)
+);
+
+$frame-main-bgc:#f2f6f8;
+$frame-breadcrumb-bgc:#e5ebee;
+$frame-breadcrumb-fontc:#5f7676;
+$frame-foot-bgc:#e5ebee;
+
 $toolbar-fontc: #5f7676;
 $toolbar-bgc: #ecf0f1;
 $toolbar-borc: #bdc3c7;
