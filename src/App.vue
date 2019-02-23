@@ -34,21 +34,21 @@
       <el-container class="frame-body">
         <el-aside width="230px" class="frame-nav">
           <el-menu default-active="1" unique-opened router class="el-menu-vertical-demo">
-            <el-menu-item index="1">
+            <el-menu-item index="index">
               <i class="fa fa-fw fa-home"></i>
               <span slot="title">主页</span>
             </el-menu-item>
-            <el-submenu index="2">
+            <el-submenu index="ui">
               <template slot="title">
                 <i class="fa fa-fw fa-diamond"></i>
                 <span>UI 元素</span>
               </template>
-              <el-menu-item index="2-1">Buttons</el-menu-item>
+              <el-menu-item index="ui-button">Buttons</el-menu-item>
               <el-menu-item index="2-2">Grid</el-menu-item>
               <el-menu-item index="2-3">Tree View</el-menu-item>
               <el-menu-item index="2-4">Panel</el-menu-item>
               <el-menu-item index="2-5">Slider</el-menu-item>
-              <el-menu-item index="2-6">Tab</el-menu-item>
+              <el-menu-item index="ui-tabs">Tabs</el-menu-item>
             </el-submenu>
             <el-submenu index="3">
               <template slot="title">
